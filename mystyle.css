@@ -1,0 +1,66 @@
+
+*{box-sizing: border-box;}
+body {margin: 0; padding: 0; height: 1000px;}
+
+a 
+  { text-decoration: none;  width:20%; text-align:center;
+    padding: 20px 33px; color:white;
+    background-color: black; 
+    display: block; float:left;
+    position: sticky; top:0; left: 0; 
+}
+a:hover{ background-color:#0005;} 
+input{ padding: 20px; clear: both;}
+input:focus{ background-color: yellow;}
+table {border-collapse: collapse; width:50%;}
+caption { color:greenyellow;font-weight: bold; 
+   text-shadow: 1px 1px 1px black, 0px 0px 15px lightgreen,
+   0px 0px 5px green;
+   
+   caption-side: bottom; }
+th,td {padding: 15px 20px; text-align: center;}
+th { background-color: mediumseagreen; color:white; }
+td { border-bottom: 1px solid #ddd;}
+tr:nth-child(even) {background-color:#f2f2f2;}
+th:hover{background-color: green;}
+td:hover { background-color: dodgerblue;}
+
+#anime {float:right;clear: both; height:60px; width:60px; position: relative; animation-name:myanime;
+         animation-duration: 4s;
+         animation-iteration-count:infinite;
+    }
+
+    @keyframes myanime{
+        0% { background-color: red; right:0px; top:50px;}
+        25% { background-color: yellow;top:200px; right:0px;}
+        50% { background-color:dodgerblue; right:400px; top:200px;}
+        75% {background-color: mediumseagreen;top:50px; right:200px;}
+        100% {background-color: black; right:0px; top:50px;}
+    }
+
+
+.box
+{
+    width:22%; margin:10px; color:whitesmoke;
+    border:1px solid #ddd; 
+    border-top-left-radius:10px;
+    height: 200px;
+    float:left; background-color: rgb(22, 47, 158);
+    box-shadow: 5px 8px 5px 2px rgba(22,47,158,0.9); 
+
+}
+.box:hover{ background-color:#000; }
+
+h1 { color:aqua; text-align: center;}
+strong {color:red;}
+
+@media (max-width:600px)
+{
+    a{width:25%;} 
+    input{  margin-bottom:5px; width:100%; height:20px;
+        
+    border-radius:8px; text-align: center;}
+    table {width:100%; overflow: auto; margin-bottom: 5px;}
+
+    .box { width:100%;}
+}
